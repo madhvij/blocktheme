@@ -1,0 +1,15 @@
+.acf-block-preview {
+	@import 'main';
+
+	font-family: $font-family;
+	font-size: $defalut-font-size;
+	letter-spacing: 0.01em;
+	line-height: 1.5;
+	font-weight: 300;
+	-webkit-text-size-adjust: 100%; 
+	
+	*, *:before, *:after {
+		box-sizing: border-box;
+	}
+	
+}

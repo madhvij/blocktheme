@@ -1,0 +1,133 @@
+.post-header {
+	display: flex;
+	align-items: stretch;
+	min-height: 100vh;
+	background-color: $dark;
+	color: $site-text-color;
+	
+	&-titles {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		justify-content: center;
+		width: 45.95%;
+		padding: 80px 80px 80px 110px;
+	}
+	
+	&-title {
+		margin-bottom: 0.6em;
+	}
+	
+	&-image {
+		width: 54.05%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+.post-content {
+	padding: clamp( 50px, 8.854166666666667vw, 170px ) 0 1px;
+	line-height: 1.75;
+	
+	@media (min-width: 1651px) {
+		font-size: 25px;
+	}
+	
+	> article > .wrap > {
+		ol, ul {
+			padding-left: 30px;
+		}
+		
+		ul {
+			list-style-type: disc;
+		}
+		
+		ol {
+			list-style-type: decimal;
+		}
+		
+		figure {
+			margin: 80px 0;
+		}
+	
+		*:not(.alignwide):not(.alignfull) {
+			max-width: 1104px;
+		}
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 500;
+		line-height: 1.2;
+	}
+
+	blockquote {
+		margin: 80px 0 80px auto;
+		padding: 80px 0 80px 100px;
+		border: none;
+		background-color: #F5F5F5;
+		font-size: 130%;
+		font-style: italic;
+		line-height: 1.5;
+		position: relative;
+		
+		@media (max-width: 1200px) {
+			padding: 60px 0 60px 80px;
+		}
+		
+		@media (max-width: 1023px) {
+			padding: 50px 20px 50px 50px;
+			font-size: 110%;
+		}
+		
+		@media (max-width: 767px) {
+			padding: 35px 15px 35px 35px;
+		}
+		
+		cite {
+			display: block;
+			font-style: normal;
+			font-weight: 600;
+			text-align: right;
+		}
+		
+		&::after {
+			content: '';
+			background-color: inherit;
+			width: calc( ( 100vw - 1440px - 144px ) / 2 );
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 100%;
+
+			@media (max-width: 1650px) {
+				width: calc( ( ( 100vw - 1440px - 79px ) / 2 ) + 100px );
+			}
+			
+			@media (max-width: 1542px) {
+				width: calc( ( ( 100vw - 79px ) / 2 ) + 70px );
+			}
+		
+			@media (max-width: 1200px) {
+				width: calc( ( ( 100vw - 79px ) / 2 ) + 150px );
+			}
+			
+			@media (max-width: 1023px) {
+				width: calc( ( ( 100vw - 79px ) / 2 ) + 40px );
+			}
+			
+			@media (max-width: 767px) {
+				width: calc( ( ( 100vw - 44px ) / 2 ) + 30px );
+			}
+			
+			@media (max-width: 480px) {
+				width: calc( ( ( 100vw - 44px ) / 2 ) + 20px );
+			}
+		}
+	}
+	
+	.wp-block-group {
+		margin: 80px 0;
+		padding: 80px 90px;
+	}
+}

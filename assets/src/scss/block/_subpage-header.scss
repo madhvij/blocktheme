@@ -1,0 +1,52 @@
+/* CSS Document */
+.subpage-header {
+	position: relative;
+	@media (max-width: 560px) {
+		.rotate-image-and-slider .shape-slides .slide-content {
+    		padding-top: 80px;
+		}
+	}
+}
+
+.subpage-slide.shape-slides {
+	h1, h2 {
+		color: #ffffff;
+	}
+}
+
+.subpage-header {
+	@media(min-width: 581px) {
+		padding-bottom: 80px;
+	}
+	
+	@media (max-width: 767px) {
+		.rotate-plus-image {
+			top: 0;
+		}
+		
+		.shape-and-slider {
+			margin: 0 0 0 auto;
+			width: 85%;
+		}
+	}
+
+	@media (max-width: 560px) {
+		.shape-and-slider {
+		//	padding-top: 45px;
+			width: 100%;
+		}
+	}
+	.mobile-shape {
+		display: none;
+	}
+
+	@media (max-width:580px) {
+		.desktop-shape {
+			display: none;
+		}
+
+		.mobile-shape {
+			display: block;
+		}		
+	}
+}

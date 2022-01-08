@@ -1,0 +1,25 @@
+.full-width-text-wrap  {
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 60px;
+	
+	@media (max-width: 1200px) {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	
+	@media (max-width: 767px) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	.full-width-text-heading{
+		h2 {
+			padding-bottom: 40px;
+			
+			@media (max-width: 767px) {
+				padding-bottom: 25px;
+			}
+		}
+	}
+}

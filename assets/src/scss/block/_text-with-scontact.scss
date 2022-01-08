@@ -1,0 +1,65 @@
+.ts-wrap {
+	padding-left: 42px;
+	padding-right: 62px;
+	padding-bottom: 45px;
+	
+	@media (max-width: 1023px) {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 45px;
+	}
+	
+	.ts-heading {
+		width: 910px;
+		max-width: 100%;
+		
+		h2 {
+			padding-bottom: 33px;
+			line-height: 1.2;
+		}
+		
+		@media (max-width: 767px) {
+			width: 100%;
+			margin: 0 auto;
+		}
+	}
+	
+	.block-text-with-sidebar-contact {
+		display: flex;
+		justify-content: space-between;
+		align-items: stretch;
+		
+		@media (max-width: 767px) {
+			flex-direction: column;
+			align-items: center;
+		}
+		
+		.ts-left {
+			margin-right: 45px;
+			width: calc( 100% - 350px);
+			max-width: 100%;
+			
+			@media (max-width: 767px) {
+				width: 100%;
+				margin-right: 0;
+			}
+		}
+		
+		.ts-right {
+			width: 350px;
+			max-width: 100%;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding-left: 50px;
+			padding-right: 15px;
+			border-left: 1px solid $site-text-color;
+			line-height: 1.7;
+			
+			@media (max-width: 767px) {
+				width: 100%;
+				border-left: none;
+				padding-left: 0;	
+			}		
+		}
+	}	
+}
